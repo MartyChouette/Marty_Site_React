@@ -11,12 +11,12 @@ import Frost from "../public/images/fbcover.png";
 import Slideshow from "../component/Slideshow";
 
 export default function Games() {
-  const temper = [Temper, Dock, Frost];
-  const pizza = [Pizza, Dock, Frost];
-  const dock = [Dock, Dock, Frost];
-  const cube = [Cube, Dock, Frost];
-  const frost = [Frost, Dock, Frost];
-  const walls = [Walls, Dock, Frost];
+  const temper = [Temper];
+  const pizza = [Pizza];
+  const dock = [Dock];
+  const cube = [Cube];
+  const frost = [Frost];
+  const walls = [Walls];
 
   return (
     <div className={styles.container}>
@@ -31,42 +31,71 @@ export default function Games() {
           <code>Interactive Software Engineer </code>
         </p>
         <div className={styles.grid}>
-          <Link className={styles.card} href="/projects">
+          <Link
+            className={styles.card}
+            href="https://martychouette.itch.io/temper"
+          >
             <h3>TEMPER</h3>
 
             <Slideshow images={temper} />
 
-            <p>UNREAL</p>
+            <p>First foray into UNREAL for solo holloween game jam</p>
           </Link>
 
-          <Link className={styles.card} href="/games">
+          <Link
+            className={styles.card}
+            href="https://github.com/PurrfectPizza/VRGame/tree/Purrfect_Pizza"
+          >
             <h3>PURRFECT PIZZA</h3>
             <Slideshow images={pizza} />
-            <p>VR 3D and 2D built in Unity, Unreal, and more</p>
+            <p>
+              Unity VR pizza making game, my contributions design, testing,
+              general software engineering
+            </p>
           </Link>
 
-          <Link className={styles.card} href="/music">
+          <Link
+            className={styles.card}
+            href="https://sulfurous.itch.io/dockside"
+          >
             <h3>Dockside</h3>
             <Slideshow images={dock} />
-            <p>Music made for independent games and myself</p>
+            <p>
+              Small game dev Unity game, my contributions design, audio,
+              composer
+            </p>
           </Link>
 
-          <Link className={styles.card} href="/art">
+          <Link
+            className={styles.card}
+            href="https://partial-insanity.itch.io/cube-dancing"
+          >
             <h3>Cube Dancing</h3>
             <Slideshow images={cube} />
-            <p>Some extra art I do from time to time</p>
+            <p>
+              Cube rythm game, my contribution is score multiplier and gameplay
+              UI
+            </p>
           </Link>
 
-          <Link className={styles.card} href="/art">
+          <Link
+            className={styles.card}
+            href="https://martychouette.itch.io/frostbyte-v01"
+          >
             <h3>FrostByte</h3>
             <Slideshow images={frost} />
-            <p>Some extra art I do from time to time</p>
+            <p>
+              Small 2D maze game in Unity designed, programmed, composed by me
+            </p>
           </Link>
 
-          <Link className={styles.card} href="/art">
+          <Link
+            className={styles.card}
+            href="https://martychouette.itch.io/walls"
+          >
             <h3>Walls</h3>
             <Slideshow images={walls} />
-            <p>Some extra art I do from time to time</p>
+            <p>First game made, Unity, designed, programmed, composed by me</p>
           </Link>
         </div>
       </main>

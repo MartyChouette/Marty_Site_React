@@ -21,17 +21,17 @@ export default function Art() {
         <div className={styles.grid}>
           <div className={styles.card}>
             <Image className={styles.gif} src={earth} alt="my gif" />
-            <p>Description for model 1</p>
+            <p></p>
           </div>
 
           <div className={styles.card}>
             <ModelViewer objPath="obj/tv.obj" mtlPath="obj/tv.mtl" />
-            <p>Description for model 1</p>
+            <p>3D model drag to interact</p>
           </div>
 
           <div className={styles.card}>
             <ModelViewer objPath="obj/owl.obj" mtlPath="obj/owl.mtl" />
-            <p>Description for model 1</p>
+            <p>3D model drag to interact</p>
           </div>
 
           <div className={styles.card}>
@@ -39,7 +39,7 @@ export default function Art() {
               objPath="obj/selfportrait2.obj"
               mtlPath="obj/selfportrait2.mtl"
             />
-            <p>Description for model 1</p>
+            <p>3D model drag to interact</p>
           </div>
 
           <div className={styles.card}>
@@ -47,6 +47,7 @@ export default function Art() {
             <video className={styles.vid} width="75%" controls>
               <source src={"vid/punk is dead.mp4"} type="video/mp4" />
             </video>
+            <p>Retro splash screen</p>
           </div>
 
           <div className={styles.card}>
@@ -54,6 +55,7 @@ export default function Art() {
             <video className={styles.vid} width="75%" controls>
               <source src={"vid/nobody.mp4"} type="video/mp4" />
             </video>
+            <p>Retro splash screen</p>
           </div>
 
           <div className={styles.card}>
@@ -61,6 +63,7 @@ export default function Art() {
             <video className={styles.vid} width="75%" controls>
               <source src={"vid/countdown.mp4"} type="video/mp4" />
             </video>
+            <p>Retro splash screen</p>
           </div>
 
           <div className={styles.card}>
@@ -68,20 +71,22 @@ export default function Art() {
             <video className={styles.vid} width="75%" controls>
               <source src={"vid/vhs clean00er_1.mp4.mp4"} type="video/mp4" />
             </video>
+            <p>Intro Test Video</p>
           </div>
           <div className={styles.card}>
             <h2>FibLikley Intro Prototype II</h2>
             <video className={styles.vid} width="75%" controls>
               <source src={"vid/vhs cleaner_6.mp4.mp4"} type="video/mp4" />
             </video>
+            <p>Intro Test Video</p>
           </div>
 
           <div className={styles.card}>
             <Image className={styles.pic_eliot} src={elliot} alt="my gif" />
-            <p>Description for model 1</p>
+            <p>Elliott Smith drawing</p>
           </div>
 
-          {/* ... other cards ... */}
+          
         </div>
       </main>
       <style jsx>{`

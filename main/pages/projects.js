@@ -35,11 +35,11 @@ export default function Games() {
             <Image
               className={styles.project_listing_pic}
               src={ghunt}
-              alt="Picture of me"
+              alt="game hunt"
             />
             <p>
-              Webervice site for followign videogame sales from every major
-              store front TEAM:
+              Webervice site for following videogame sales from every major
+              store front, my contribution frontend and API endpoints
             </p>
           </Link>
 
@@ -47,7 +47,7 @@ export default function Games() {
             className={styles.card}
             href="https://github.com/meap02/CS4450_FinalProgram"
           >
-            <h3 >
+            <h3>
               <br />
               <br />
               <br />
@@ -60,9 +60,11 @@ export default function Games() {
             <Image
               className={styles.project_listing_pic}
               src={mcraft}
-              alt="Picture of me"
+              alt="mcraft"
             />
-            <p>Java TEAM:</p>
+            <p>
+              Java and lwjgl my contribution half of the general development
+            </p>
           </Link>
 
           <Link
@@ -81,9 +83,9 @@ export default function Games() {
             <Image
               className={styles.project_listing_pic_pss}
               src={pss}
-              alt="Picture of me"
+              alt="PSS"
             />
-            <p></p>
+            <p>Python & tkinter my contribution mainly frontend and design</p>
           </Link>
 
           <Link className={styles.card} href="https://martyos.netlify.app/">
@@ -97,9 +99,9 @@ export default function Games() {
             <Image
               className={styles.project_listing_pic}
               src={martyos}
-              alt="Picture of me"
+              alt="martyos"
             />
-            <p>Previous portfolio website</p>
+            <p>My previous portfolio website done in the style of win 98</p>
           </Link>
 
           <Link
@@ -117,9 +119,9 @@ export default function Games() {
             <Image
               className={styles.project_listing_pic}
               src={javafx}
-              alt="Picture of me"
+              alt="javafx"
             />
-            <p>site prottype redesign for ____ using JavaFX TEAM:</p>
+            <p>site prototype redesign for yale art school site using JavaFX my contributions design and frontend</p>
           </Link>
 
           <Link
@@ -138,7 +140,7 @@ export default function Games() {
               src={etracker}
               alt="Picture of me"
             />
-            <p>Python expense tracking program</p>
+            <p>simple CLI python expense tracking program with some visuals for pie chart of expenses</p>
           </Link>
 
           <Link
@@ -157,7 +159,7 @@ export default function Games() {
               src={atm}
               alt="Picture of me"
             />
-            <p>C# atm program</p>
+            <p>simple CLI C# atm program</p>
           </Link>
         </div>
       </main>
