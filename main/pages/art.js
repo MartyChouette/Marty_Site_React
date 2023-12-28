@@ -12,7 +12,7 @@ export default function Art() {
       <main>
         {/* Your existing slideshow and other content */}
         <h1 className={styles.title}>
-          Art By <Link href="https://twitter.com/FibLikley">Marty!</Link>
+          Art By <Link href="/">Marty!</Link>
           <Image className={styles.pic} src={pic} alt="Picture of me" />
         </h1>
         <p className={styles.description}>
@@ -85,8 +85,6 @@ export default function Art() {
             <Image className={styles.pic_eliot} src={elliot} alt="my gif" />
             <p>Elliott Smith drawing</p>
           </div>
-
-          
         </div>
       </main>
       <style jsx>{`
