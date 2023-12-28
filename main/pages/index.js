@@ -123,7 +123,7 @@ export default function Home() {
       `}</style>
 
       <style jsx global>{`
-        html,
+        html, 
         body {
           padding: 0;
           margin: 0;
