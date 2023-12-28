@@ -50,13 +50,13 @@ export default function Art() {
             <p>Retro splash screen</p>
           </div>
 
-          <div className={styles.card}>
+          {/* <div className={styles.card}>
             <h2>Nobody Reads</h2>
             <video className={styles.vid} width="75%" controls>
               <source src={"vid/nobody.mp4"} type="video/mp4" />
             </video>
             <p>Retro splash screen</p>
-          </div>
+          </div> */}
 
           <div className={styles.card}>
             <h2>Countdown</h2>
@@ -66,7 +66,7 @@ export default function Art() {
             <p>Retro splash screen</p>
           </div>
 
-          <div className={styles.card}>
+          {/* <div className={styles.card}>
             <h2>FibLikley Intro Prototype</h2>
             <video className={styles.vid} width="75%" controls>
               <source src={"vid/vhs clean00er_1.mp4.mp4"} type="video/mp4" />
@@ -79,12 +79,12 @@ export default function Art() {
               <source src={"vid/vhs cleaner_6.mp4.mp4"} type="video/mp4" />
             </video>
             <p>Intro Test Video</p>
-          </div>
+          </div> */}
 
-          <div className={styles.card}>
+          {/* <div className={styles.card}>
             <Image className={styles.pic_eliot} src={elliot} alt="my gif" />
             <p>Elliott Smith drawing</p>
-          </div>
+          </div> */}
         </div>
       </main>
       <style jsx>{`

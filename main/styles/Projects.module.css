@@ -95,7 +95,7 @@
 .card:active p {
   color: rgb(223, 64, 162);
   text-decoration: underline;
-  transform: translateY(-140px);
+  transform: translateY(-120px);
 }
 
 .logo {
