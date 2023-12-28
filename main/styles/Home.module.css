@@ -1,4 +1,3 @@
-
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -6,7 +5,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color:rgb(242, 221, 221);
+  background-color: rgb(242, 221, 221);
+  overflow: hidden;
 }
 
 .title a {
@@ -14,10 +14,9 @@
   text-decoration: none;
 }
 
-.icon{
+.icon {
   font-size: xx-large;
 }
-
 
 .title a:hover,
 .title a:focus,
@@ -64,9 +63,7 @@
   text-decoration: none;
   border: 1px solid #1a8089;
   border-radius: 10px;
-  transition:
-    color 0.15s ease,
-    border-color 0.15s ease;
+  transition: color 0.15s ease, border-color 0.15s ease;
 }
 
 .card:hover,
@@ -74,7 +71,10 @@
 .card:active {
   color: #1a8089;
   border-color: #1a8089;
+  transform: translateY(-4px);
 }
+
+
 
 .card h3 {
   margin: 0 0 1rem 0;
@@ -87,24 +87,51 @@
   line-height: 1.5;
 }
 
-.card:hover p {
-  color: rgb(223, 64, 162);
-  text-decoration: none;
-}
+
 
 .logo {
   height: 1em;
 }
 
-.pic{
+.pic {
   position: absolute;
   width: 40%;
-  height:auto;
+  height: auto;
+  padding-right: 18%;
 }
+
+.pic:hover {
+  transform: translateY(-4px);
+}
+
+.footer {
+  flex-direction: row;
+  font-size: x-large;
+  color: #1a8089;
+  font-weight: 100;
+}
+
+.a:hover {
+  flex-direction: row;
+  font-size: xx-large;
+  color: pink;
+  
+}
+
+
 
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
+
+  .footer {
+    margin: 25%;
+    padding-bottom: 30%;
+    flex-direction: column;
+    font-size: xx-large;
+    color: #1a8089;
+  }
+
 }

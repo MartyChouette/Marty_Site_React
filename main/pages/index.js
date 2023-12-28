@@ -1,76 +1,88 @@
-import Head from "next/head";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 import pic from "../public/selfportrait_beard.svg";
 import Image from "next/image";
 
+
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>MartyOS</title>
-        <link rel="stylesheet" href="styles.css" />
-        <link
-          href="https://fonts.cdnfonts.com/css/common-pixel"
-          rel="stylesheet"
-        />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        ></link>
-        <style></style>
-      </Head>
-
       <main>
         <h1 className={styles.title}>
-          Made By <a href="https://nextjs.org">Marty!</a>
-          <Image className={styles.pic} src={pic} alt="Picture of the author" />
+          Made By <Link href="/">Marty!</Link>
+          <Image className={styles.pic} src={pic} alt="Picture of me" />
         </h1>
 
         <p className={styles.description}>
-          <code>Creative Software Engineer </code>
+          <code>Interactive Software Engineer </code>
         </p>
         <div className={styles.grid}>
-          <a href="https://martyos.netlify.app/" className={styles.card}>
+          <Link className={styles.card} href="/projects">
             <h3>
               Projects <span className={styles.icon}>&#9732;</span>
             </h3>
             <p>Applications & Websites worked on or created by me</p>
-          </a>
+          </Link>
 
-          <a href="https://martyos.netlify.app/games" className={styles.card}>
+          <Link className={styles.card} href="/games">
             <h3>
               Games <span className={styles.icon}>&#9861;</span>
             </h3>
             <p>VR 3D and 2D built in Unity, Unreal, and more</p>
-          </a>
+          </Link>
 
-          <a href="https://martyos.netlify.app/music" className={styles.card}>
+          <Link className={styles.card} href="/music">
             <h3>
               Music <span className={styles.icon}>&#9835;</span>
             </h3>
             <p>Music made for independent games and myself</p>
-          </a>
+          </Link>
 
-          <a href="https://martyos.netlify.app/blender" className={styles.card}>
+          <Link className={styles.card} href="/art">
             <h3>
               Art <span className={styles.icon}>&#9998;</span>
             </h3>
             <p>Some extra art I do from time to time</p>
-          </a>
+          </Link>
         </div>
       </main>
 
-      <footer>
+      <footer className={styles.footer}>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          className={styles.a}
+          href="https://www.linkedin.com/in/martyscott64/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          LINKEDIN__GITHUB__MATRYOS_RESUME.PDF
+          LINKEDIN
         </a>
+        +
+        <a
+          className={styles.a}
+          href="https://github.com/MartyChouette"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GITHUB
+        </a>
+        +
+        <a
+          className={styles.a}
+          href="https://martyos.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          MATRYOS
+        </a>
+        +
+        <Link
+          className={styles.a}
+          href="/marty_resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          RESUME.PDF
+        </Link>
       </footer>
 
       <style jsx>{`
