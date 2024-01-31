@@ -26,7 +26,7 @@ const Slideshow = ({ images }) => {
 
   const startSlideshow = () => {
     console.log("Starting slideshow");
-    intervalRef.current = setInterval(showNextImage, 2000);
+    intervalRef.current = setInterval(showNextImage, 2500);
   };
 
   const stopSlideshow = () => {

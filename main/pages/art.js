@@ -12,8 +12,9 @@ export default function Art() {
       <main>
         {/* Your existing slideshow and other content */}
         <h1 className={styles.title}>
+        <Link href="/"> &lArr; </Link>
           Art By <Link href="/">Marty!</Link>
-          <Image className={styles.pic} src={pic} alt="Picture of me" />
+          <Link href="https://martyos.netlify.app/"><Image className={styles.pic} src={pic} alt="Picture of me" /></Link>
         </h1>
         <p className={styles.description}>
           <code>Interactive Software Engineer </code>

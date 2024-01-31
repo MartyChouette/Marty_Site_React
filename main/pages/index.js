@@ -9,8 +9,9 @@ export default function Home() {
     <div className={styles.container}>
       <main>
         <h1 className={styles.title}>
+        
           Made By <Link href="/">Marty!</Link>
-          <Image className={styles.pic} src={pic} alt="Picture of me" />
+          <Link href="https://martyos.netlify.app/"><Image className={styles.pic} src={pic} alt="Picture of me" /></Link>
         </h1>
 
         <p className={styles.description}>

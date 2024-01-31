@@ -15,10 +15,11 @@ export default function Games() {
     <div className={styles.container}>
       <main>
         <h1 className={styles.title}>
+        <Link href="/"> &lArr; </Link>
           Programs By <Link href="/">Marty!</Link>
-          <Link href="/">
-            <Image className={styles.pic} src={pic} alt="Picture of me" />
-          </Link>
+          
+          <Link href="https://martyos.netlify.app/"><Image className={styles.pic} src={pic} alt="Picture of me" /></Link>
+          
         </h1>
         <p className={styles.description}>
           <code>Interactive Software Engineer </code>
