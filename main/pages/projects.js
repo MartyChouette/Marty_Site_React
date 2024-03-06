@@ -18,7 +18,7 @@ export default function Games() {
         <Link href="/"> &lArr; </Link>
           Programs By <Link href="/">Marty!</Link>
           
-          <Link href="https://martyos.netlify.app/"><Image className={styles.pic} src={pic} alt="Picture of me" /></Link>
+          {/*<Link href="https://martyos.netlify.app/"><Image className={styles.pic} src={pic} alt="Picture of me" /></Link>*/}
           
         </h1>
         <p className={styles.description}>
