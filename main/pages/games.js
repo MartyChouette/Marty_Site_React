@@ -147,7 +147,7 @@ export default function Games() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          MATRYOS
+          MARTYOS
         </a>
         +
         <Link
@@ -168,6 +168,7 @@ export default function Games() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          
         }
 
         .card {

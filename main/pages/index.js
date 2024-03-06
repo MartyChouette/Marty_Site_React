@@ -4,6 +4,7 @@ import pic from "../public/selfportrait_beard.svg";
 import Image from "next/image";
 
 
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -73,7 +74,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          MATRYOS
+          MARTYOS
         </a>
         +
         <Link
@@ -94,6 +95,7 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          
         }
         footer {
           width: 100%;
@@ -128,6 +130,8 @@ export default function Home() {
         body {
           padding: 0;
           margin: 0;
+          width: 100%;
+          overflow-x: hidden;
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;

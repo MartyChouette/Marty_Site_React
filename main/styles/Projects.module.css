@@ -103,7 +103,7 @@
 }
 
 .pic {
-  position: absolute;
+  position: relative;
   width: 40%;
   height: auto;
   padding-right: 18%;
