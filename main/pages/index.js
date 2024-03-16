@@ -85,8 +85,18 @@ export default function Home() {
         >
           RESUME.PDF
         </Link>
-      </footer>
 
+        +
+        <Link
+          className={styles.a}
+          href="https://soundcloud.com/marty_64"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          SOUNDCLOUD
+        </Link>
+      </footer>
+      
       <style jsx>{`
         main {
           padding: 5rem 0;

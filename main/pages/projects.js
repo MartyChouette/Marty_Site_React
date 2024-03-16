@@ -201,6 +201,16 @@ export default function Games() {
         >
           RESUME.PDF
         </Link>
+
+        +
+        <Link
+          className={styles.a}
+          href="https://soundcloud.com/marty_64"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          SOUNDCLOUD
+        </Link>
       </footer>
 
       <style jsx>{`

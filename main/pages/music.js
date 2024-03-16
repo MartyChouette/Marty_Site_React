@@ -4,6 +4,7 @@ import pic from "../public/selfportrait_beard.svg";
 import Image from "next/image";
 import bgsite from "../public/images/bgsite.png";
 import { useEffect, useState } from "react";
+import ReactPlayer from "react-player"
 
 export default function Music() {
   const [currentPlaying, setCurrentPlaying] = useState(null);
@@ -94,6 +95,48 @@ export default function Music() {
           <code>Interactive Software Engineer </code>
         </p>
         <div className={styles.grid}>
+
+          <div className = {styles.card}>
+          <ReactPlayer
+          url = "https://soundcloud.com/marty_64/taketen"
+          width ="100%"
+          height = "300"
+          config = {{
+                      soundcloud: {
+                        options: {
+                          sharing: true
+                        }
+                      }
+          }}/>
+          </div>
+
+          <div className = {styles.card}>
+          <ReactPlayer
+          url = "https://soundcloud.com/marty_64/court"
+          width ="100%"
+          height = "300"
+          config = {{
+                      soundcloud: {
+                        options: {
+                          sharing: true
+                        }
+                      }
+          }}/>
+          </div>
+
+          <div className = {styles.card}>
+          <ReactPlayer
+          url = "https://soundcloud.com/marty_64/fibley-somewhere"
+          width ="100%"
+          height = "300"
+          config = {{
+                      soundcloud: {
+                        options: {
+                          sharing: true
+                        }
+                      }
+          }}/>
+          </div>
           {audioTracks.map((track, index) => (
             <div key={index} className={styles.card}>
               <h2>{track.title}</h2>
@@ -121,6 +164,55 @@ export default function Music() {
           </div>
         </div>
       </main>
+
+
+      <footer className={styles.footer}>
+        <a
+          className={styles.a}
+          href="https://www.linkedin.com/in/martyscott64/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LINKEDIN
+        </a>
+        +
+        <a
+          className={styles.a}
+          href="https://github.com/MartyChouette"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GITHUB
+        </a>
+        +
+        <a
+          className={styles.a}
+          href="https://martyos.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          MARTYOS
+        </a>
+        +
+        <Link
+          className={styles.a}
+          href="/marty_resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          RESUME.PDF
+        </Link>
+
+        +
+        <Link
+          className={styles.a}
+          href="https://soundcloud.com/marty_64"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          SOUNDCLOUD
+        </Link>
+      </footer>
     </div>
   );
 }

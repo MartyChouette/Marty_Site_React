@@ -88,6 +88,54 @@ export default function Art() {
           </div> */}
         </div>
       </main>
+
+      <footer className={styles.footer}>
+        <a
+          className={styles.a}
+          href="https://www.linkedin.com/in/martyscott64/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LINKEDIN
+        </a>
+        +
+        <a
+          className={styles.a}
+          href="https://github.com/MartyChouette"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GITHUB
+        </a>
+        +
+        <a
+          className={styles.a}
+          href="https://martyos.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          MARTYOS
+        </a>
+        +
+        <Link
+          className={styles.a}
+          href="/marty_resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          RESUME.PDF
+        </Link>
+
+        +
+        <Link
+          className={styles.a}
+          href="https://soundcloud.com/marty_64"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          SOUNDCLOUD
+        </Link>
+      </footer>
       <style jsx>{`
         main {
           padding: 5rem 0;
